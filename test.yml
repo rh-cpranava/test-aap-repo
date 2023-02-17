@@ -2,3 +2,5 @@
 - hosts: localhost
   tasks:
     - debug: var=registered_value
+    - set_stat:
+          registered_value: "something_different"
